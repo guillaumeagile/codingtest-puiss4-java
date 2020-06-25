@@ -25,7 +25,7 @@ public class PlateauDeJeu {
 		StringBuilder resultBuilder = new StringBuilder();
 		for (CouleurCase[] lignes : cases) {
 			for (CouleurCase caseDuPlateau : lignes) {
-				resultBuilder.append(caseDuPlateau.toString());
+				resultBuilder.append(caseDuPlateau.getCode());
 				resultBuilder.append(" ");
 			}
 			

@@ -35,15 +35,15 @@ public class Game {
 								CouleurCase.ROUGE, CouleurCase.JAUNE } });
 
 		System.out.println(PlateauDeJeuService.getInstance().getPlateauDeJeu());
-		
+
 		System.out.println("(3) On test si il y a un vainqueur");
-    	Optional<CouleurCase> vainqueur = PlateauDeJeuService.getInstance().determineVainqueur();
-    	
-    	if(vainqueur.isPresent()) {
-    		System.out.println("Le vainqueur est la couleur " + vainqueur.get());
-    	} else {
-    		System.out.println("Il n'y a pas encore de vainqueur");
-    	}
+		Optional<CouleurCase> vainqueur = PlateauDeJeuService.getInstance().determineVainqueur();
+
+		if (vainqueur.isPresent()) {
+			System.out.println("Le vainqueur est la couleur " + vainqueur.get());
+		} else {
+			System.out.println("Il n'y a pas encore de vainqueur");
+		}
 
 	}
 }

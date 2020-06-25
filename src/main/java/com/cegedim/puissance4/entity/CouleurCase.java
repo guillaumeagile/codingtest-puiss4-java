@@ -15,7 +15,7 @@ public enum CouleurCase {
 		this.code = code;
 	}
 
-	public String toString() {
+	public String getCode() {
 		return this.code;
 	}
 }
