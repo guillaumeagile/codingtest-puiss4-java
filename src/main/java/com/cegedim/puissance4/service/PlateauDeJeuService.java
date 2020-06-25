@@ -12,7 +12,7 @@ import lombok.Getter;
  * @author Romain Féret
  */
 public class PlateauDeJeuService {
-	
+
 	@Getter
 	private PlateauDeJeu plateauDeJeu;
 
@@ -28,12 +28,12 @@ public class PlateauDeJeuService {
 	}
 
 	/*
-	 * Initialisation du jeu à un état définit (avec un tableau de cases en paramètres)
+	 * Initialisation du jeu à un état définit (avec un tableau de cases en
+	 * paramètres)
 	 */
 	public void initialiserJeu(CouleurCase[][] casesDuPlateau) {
 		plateauDeJeu.setCases(casesDuPlateau);
 	}
-
 
 	/*
 	 * Initialisation du jeu à vide
