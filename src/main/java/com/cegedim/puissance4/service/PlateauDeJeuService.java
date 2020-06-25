@@ -37,18 +37,7 @@ public class PlateauDeJeuService {
 		plateauDeJeu.setCases(casesDuPlateau);
 	}
 
-	/*
-	 * Initialisation du jeu à vide
-	 */
-	public void intialiserJeu() {
-		CouleurCase[][] casesDuPlateau = new CouleurCase[PlateauDeJeu.MAX_COLONNES][PlateauDeJeu.MAX_LIGNES];
-		for (int j = 0; j < PlateauDeJeu.MAX_LIGNES; j++) {
-			for (int i = 0; i < PlateauDeJeu.MAX_COLONNES; i++) {
-				casesDuPlateau[i][j] = CouleurCase.VIDE;
-			}
-		}
-		PlateauDeJeuService.getInstance().initialiserJeu(casesDuPlateau);
-	}
+
 	
 	/*
 	 * Détermine si il y à un vainqueur et si oui quelle est sa couleur

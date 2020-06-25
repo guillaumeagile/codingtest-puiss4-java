@@ -20,15 +20,37 @@ public class PlateauDeJeu {
 
     private CouleurCase[][] cases = new CouleurCase[MAX_COLONNES][MAX_LIGNES];
 
+    /*
+     * toString personnalisé pour pouvoir afficher proprement le plateau de jeu
+     */
 	@Override
 	public String toString() {
 		StringBuilder resultBuilder = new StringBuilder();
-		for (CouleurCase[] lignes : cases) {
-			for (CouleurCase caseDuPlateau : lignes) {
-				resultBuilder.append(caseDuPlateau.getCode());
-				resultBuilder.append(" ");
-			}
+		
+		//Ligne à vide de haut de tableau
+		resultBuilder.append("+");
+		for (int i = 0; i < MAX_COLONNES; i++) {
+			resultBuilder.append("---");
+			resultBuilder.append("+");
 			
+		}
+		resultBuilder.append('\n');
+		
+		
+		for (CouleurCase[] lignes : cases) {
+			resultBuilder.append("|");
+			for (CouleurCase caseDuPlateau : lignes) {
+				resultBuilder.append(" " + caseDuPlateau.getCode() + " ");
+				resultBuilder.append("|");
+			}
+			resultBuilder.append('\n');
+			
+			resultBuilder.append("+");
+			for (int i = 0; i < MAX_COLONNES; i++) {
+				resultBuilder.append("---");
+				resultBuilder.append("+");
+				
+			}
 			resultBuilder.append('\n');
 		}
 

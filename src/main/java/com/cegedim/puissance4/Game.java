@@ -11,13 +11,7 @@ public class Game {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("(1) Initialisation du plateau de jeu à vide");
-
-		PlateauDeJeuService.getInstance().intialiserJeu();
-
-		System.out.println(PlateauDeJeuService.getInstance().getPlateauDeJeu());
-
-		System.out.println("(2) Initialisation du plateau de jeu à l'état décrit dans la consigne");
+		System.out.println("(1) Initialisation du plateau de jeu à l'état décrit dans la consigne");
 
 		PlateauDeJeuService.getInstance()
 				.initialiserJeu(new CouleurCase[][] {
@@ -36,7 +30,7 @@ public class Game {
 
 		System.out.println(PlateauDeJeuService.getInstance().getPlateauDeJeu());
 
-		System.out.println("(3) On test si il y a un vainqueur");
+		System.out.println("(2) On test si il y a un vainqueur");
 		Optional<CouleurCase> vainqueur = PlateauDeJeuService.getInstance().determineVainqueur();
 
 		if (vainqueur.isPresent()) {
