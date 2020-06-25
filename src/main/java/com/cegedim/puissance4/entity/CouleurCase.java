@@ -3,7 +3,7 @@ package com.cegedim.puissance4.entity;
 /**
  * Représente tous les étas possible d'une case
  * 
- * @author Josef
+ * @author Romain Féret
  *
  */
 public enum CouleurCase {

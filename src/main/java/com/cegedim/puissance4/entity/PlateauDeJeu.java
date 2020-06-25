@@ -4,6 +4,13 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Représente le plateau de jeu
+ * 
+ * @author Romain Féret
+ *
+ */
+
 @Getter
 @Setter
 @RequiredArgsConstructor
